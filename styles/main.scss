@@ -1,0 +1,46 @@
+body {
+    font-family: "Open Sans", Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    .house {
+        background-color: #1994b5;
+        color: #fff;
+        padding: 30px;
+        border-radius: 12px;
+    }
+    .br-bad {
+        background-color: #13891d;
+        color: #fff;
+        padding: 30px;
+        border-radius: 12px;
+    }
+    p {
+        font-family: "Open Sans", Arial, sans-serif;
+    }
+}
+
+// Estilos para el contenedor de información de la serie
+#serie-info {
+    margin-top: 20px;
+}
+
+// Estilos para el título de la serie
+#serie-title {
+    background-color: #007bff;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+// Estilos para los géneros de la serie
+#serie-genres {
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+// Estilos para el año de lanzamiento de la serie
+#serie-year {
+    font-weight: bold;
+    color: #666;
+}
+
