@@ -28,6 +28,15 @@
         <!-- Agrega más elementos aquí según la información que desees mostrar -->
     </div>
 
+    <h1 class="luis-miguel">Información sobre la serie 3</h1>
+    <div class="serie-info">
+        <h2 class="serie-title"></h2>
+        <p class="serie-genres"></p>
+        <p class="serie-year"></p>
+        <img class="serie-image" src="" alt="Imagen de la serie"> <!-- Aquí agregamos la etiqueta de la imagen -->
+        <!-- Agrega más elementos aquí según la información que desees mostrar -->
+    </div>
+
 <!--------Script AJAX----------------------------------------------------------------->
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
@@ -61,6 +70,22 @@
             .catch(error => {
                 console.error('Error al obtener la información:', error);
             });
+        //Serie 3
+        // Realizar la solicitud a la API para la serie "Luis Miguel: La Serie"
+        axios.get('https://api.tvmaze.com/shows/28270')
+            .then(response => {
+                const serieData = response.data;
+                
+                // Actualizar el contenido de los elementos HTML con la información de la serie
+                document.querySelectorAll('.serie-title')[2].textContent = serieData.name;
+                document.querySelectorAll('.serie-genres')[2].textContent = `Géneros: ${serieData.genres}`;
+                document.querySelectorAll('.serie-year')[2].textContent = `Año de lanzamiento: ${serieData.premiered}`;
+                document.querySelectorAll('.serie-image')[2].src = serieData.image.medium; // Establecemos la URL de la imagen
+            })
+            .catch(error => {
+                console.error('Error al obtener la información:', error);
+            });
+
     </script>
 </body>
 </html>

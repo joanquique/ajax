@@ -18,6 +18,15 @@ body .br-bad {
 body p {
   font-family: "Open Sans", Arial, sans-serif;
 }
+body .luis-miguel {
+  background-color: #7b7b14;
+  color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+}
+body p {
+  font-family: "Open Sans", Arial, sans-serif;
+}
 
 #serie-info {
   margin-top: 20px;
