@@ -1,50 +1,75 @@
 body {
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   margin: 0;
   padding: 20px;
 }
-body .house {
-  background-color: #1994b5;
-  color: #fff;
-  padding: 30px;
-  border-radius: 12px;
+body header {
+  text-align: center;
+  background: #222;
+  color: white;
+  padding: 10px 0;
+  margin-bottom: 10px;
+  border-radius: 10px;
 }
-body .br-bad {
-  background-color: #13891d;
-  color: #fff;
-  padding: 30px;
-  border-radius: 12px;
+body section {
+  margin-bottom: 20px;
 }
-body p {
-  font-family: "Open Sans", Arial, sans-serif;
+body h2 {
+  text-align: center;
 }
-body .luis-miguel {
-  background-color: #7b7b14;
-  color: #fff;
-  padding: 30px;
-  border-radius: 12px;
+body .serie-info {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  margin-top: 10px;
+  gap: 20px;
 }
-body p {
-  font-family: "Open Sans", Arial, sans-serif;
+body .text-info {
+  flex: 1;
 }
-
-#serie-info {
-  margin-top: 20px;
-}
-
-#serie-title {
-  background-color: #007bff;
+body .serie-title {
   font-size: 24px;
   font-weight: 500;
   margin-bottom: 10px;
 }
-
-#serie-genres {
+body .serie-genres {
   font-style: italic;
   margin-bottom: 5px;
 }
-
-#serie-year {
+body .serie-year {
   font-weight: bold;
-  color: #666;
+  color: #333;
+}
+body .serie-image {
+  max-width: 200px;
+  height: auto;
+  border-radius: 15px;
+}
+body #house {
+  background-color: #1994b5;
+  color: white;
+  padding: 30px;
+  border-radius: 12px;
+}
+body #breaking-bad {
+  background-color: #13891d;
+  color: white;
+  padding: 30px;
+  border-radius: 12px;
+}
+body #luis-miguel {
+  background-color: #7b7b14;
+  color: white;
+  padding: 30px;
+  border-radius: 12px;
+}
+@media only screen and (max-width: 600px) {
+  body .serie-info {
+    flex-direction: column;
+    text-align: center;
+  }
+  body .serie-image {
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
 }/*# sourceMappingURL=main.css.map */

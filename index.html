@@ -5,37 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sedan:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <title>AJAX</title>
     <link rel="stylesheet" href="styles/main.css"> <!-- Aquí importamos el archivo CSS -->
 </head>
 <body>
-    <h1 class="house">Información sobre la serie 1</h1>
-    <div class="serie-info">
-        <h2 class="serie-title"></h2>
-        <p class="serie-genres"></p>
-        <p class="serie-year"></p>
-        <img class="serie-image" src="" alt="Imagen de la serie"> <!-- Aquí agregamos la etiqueta de la imagen -->
-        <!-- Agrega más elementos aquí según la información que desees mostrar -->
-    </div>
+    <header>
+        <h1>Información de Series</h1>
+    </header>
+    <main>
+        <section id="house">
+            <h2>Información sobre la serie House</h2>
+            <div class="serie-info">
+                <img class="serie-image" src="" alt="Imagen de la serie">
+                <div class="text-info">
+                    <h3 class="serie-title"></h3>
+                    <p class="serie-genres"></p>
+                    <p class="serie-year"></p>
+                </div>
+            </div>
+        </section>
 
-    <h1 class="br-bad">Información sobre la serie 2</h1>
-    <div class="serie-info">
-        <h2 class="serie-title"></h2>
-        <p class="serie-genres"></p>
-        <p class="serie-year"></p>
-        <img class="serie-image" src="" alt="Imagen de la serie"> <!-- Aquí agregamos la etiqueta de la imagen -->
-        <!-- Agrega más elementos aquí según la información que desees mostrar -->
-    </div>
+        <section id="breaking-bad">
+            <h2>Información sobre la serie Breaking Bad</h2>
+            <div class="serie-info">
+                <img class="serie-image" src="" alt="Imagen de la serie">
+                <div class="text-info">
+                    <h3 class="serie-title"></h3>
+                    <p class="serie-genres"></p>
+                    <p class="serie-year"></p>
+                </div>
+            </div>
+        </section>
 
-    <h1 class="luis-miguel">Información sobre la serie 3</h1>
-    <div class="serie-info">
-        <h2 class="serie-title"></h2>
-        <p class="serie-genres"></p>
-        <p class="serie-year"></p>
-        <img class="serie-image" src="" alt="Imagen de la serie"> <!-- Aquí agregamos la etiqueta de la imagen -->
-        <!-- Agrega más elementos aquí según la información que desees mostrar -->
-    </div>
+        <section id="luis-miguel">
+            <h2>Información sobre la serie Luis Miguel</h2>
+            <div class="serie-info">
+                <img class="serie-image" src="" alt="Imagen de la serie">
+                <div class="text-info">
+                    <h3 class="serie-title"></h3>
+                    <p class="serie-genres"></p>
+                    <p class="serie-year"></p>
+                </div>
+            </div>
+        </section>
+    </main>
 
 <!--------Script AJAX----------------------------------------------------------------->
 

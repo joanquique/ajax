@@ -1,55 +1,97 @@
+$font-stack: "Roboto", Arial, sans-serif;
+$primary-color: #007bff;
+$secondary-color: #333;
+$background-color-house: #1994b5;
+$background-color-breaking-bad: #13891d;
+$background-color-luis-miguel: #7b7b14;
+$padding: 30px;
+$border-radius: 12px;
+
 body {
-    font-family: "Open Sans", Arial, sans-serif;
+    font-family: $font-stack;
     margin: 0;
     padding: 20px;
-    .house {
-        background-color: #1994b5;
-        color: #fff;
-        padding: 30px;
-        border-radius: 12px;
+
+    header {
+        text-align: center;
+        background: #222;
+        color: white;
+        padding: 10px 0;
+        margin-bottom: 10px;
+        border-radius: 10px;
     }
-    .br-bad {
-        background-color: #13891d;
-        color: #fff;
-        padding: 30px;
-        border-radius: 12px;
+
+    section {
+        margin-bottom: 20px;
     }
-    p {
-        font-family: "Open Sans", Arial, sans-serif;
+
+    h2 {
+        text-align: center;
     }
-    .luis-miguel {
-        background-color: #7b7b14;
-        color: #fff;
-        padding: 30px;
-        border-radius: 12px;
+
+    .serie-info {
+        display: flex;
+        align-items: center;  // Alinear elementos verticalmente en el centro
+        text-align: left;
+        margin-top: 10px;
+        gap: 20px;
     }
-    p {
-        font-family: "Open Sans", Arial, sans-serif;
+
+    .text-info {
+        flex: 1;
+    }
+
+    .serie-title {
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+
+    .serie-genres {
+        font-style: italic;
+        margin-bottom: 5px;
+    }
+
+    .serie-year {
+        font-weight: bold;
+        color: $secondary-color;
+    }
+
+    .serie-image {
+        max-width: 200px;
+        height: auto;
+        border-radius: 15px;
+    }
+
+    #house {
+        background-color: $background-color-house;
+        color: white;
+        padding: $padding;
+        border-radius: $border-radius;
+    }
+
+    #breaking-bad {
+        background-color: $background-color-breaking-bad;
+        color: white;
+        padding: $padding;
+        border-radius: $border-radius;
+    }
+
+    #luis-miguel {
+        background-color: $background-color-luis-miguel;
+        color: white;
+        padding: $padding;
+        border-radius: $border-radius;
+    }
+    @media only screen and (max-width: 600px) {
+        .serie-info {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .serie-image {
+            max-width: 100%;
+            margin-bottom: 10px;
+        }
     }
 }
-
-// Estilos para el contenedor de información de la serie
-#serie-info {
-    margin-top: 20px;
-}
-
-// Estilos para el título de la serie
-#serie-title {
-    background-color: #007bff;
-    font-size: 24px;
-    font-weight: 500;
-    margin-bottom: 10px;
-}
-
-// Estilos para los géneros de la serie
-#serie-genres {
-    font-style: italic;
-    margin-bottom: 5px;
-}
-
-// Estilos para el año de lanzamiento de la serie
-#serie-year {
-    font-weight: bold;
-    color: #666;
-}
-
